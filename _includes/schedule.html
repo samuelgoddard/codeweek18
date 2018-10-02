@@ -42,12 +42,17 @@
                 <div id="headingThree">
                   <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse{{ event.tag }}" aria-expanded="false"
                     aria-controls="collapse{{ event.tag }}">
-                    <div class="images-box">
-                      <img class="img-fluid" src="assets/img/schedule/{{ event.photo }} " alt="">
+                    <div class="event-title">
+                      <div class="images-box">
+                        <img class="img-fluid" src="assets/img/schedule/{{ event.photo }} " alt="">
+                      </div>
+                      <span class="time">{{ event.time }}</span>
+                      <h4>{{ event.name }}</h4>
+                      <h5 class="name">{{ event.speaker }}</h5>
                     </div>
-                    <span class="time">{{ event.time }}</span>
-                    <h4>{{ event.name }}</h4>
-                    <h5 class="name">{{ event.speaker }}</h5>
+                    <div class="registration-button">
+                      <a class="btn btn-common btn-rm" href="http://www.cesium.di.uminho.pt/activities">Inscrever</a>
+                    </div>
                   </div>
                 </div>
                 <div id="collapse{{ event.tag }}" class="collapse" aria-labelledby="heading{{ event.tag }}" data-parent="#accordion">
